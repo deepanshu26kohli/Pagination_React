@@ -31,7 +31,9 @@ const Pagination = () => {
         }
     }
     useEffect(() => {
-        myApiData((currpage * recPerPage) - recPerPage, recPerPage)
+        myApiData((currpage * recPerPage) - recPerPage, recPerPage);
+      }, [currpage]);
+    useEffect(() => {
         setRecords(mydata.posts)
         setNpage(Math.ceil(mydata.total / recPerPage))
         setLastIndex(currpage * recPerPage)
