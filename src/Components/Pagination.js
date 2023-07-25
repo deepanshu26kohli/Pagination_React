@@ -3,7 +3,7 @@ import React, { useEffect, useState  } from 'react'
 import "../pagination.css"
 const Pagination = () => {
     const [mydata, setMydata] = useState([])
-    const recPerPage = 20
+    const recPerPage = 5
     const [currpage, setCurrPage] = useState(1)
     const [numbers, setNumbers] = useState([])
     const [lastIndex,setLastIndex] =  useState(currpage * recPerPage)
