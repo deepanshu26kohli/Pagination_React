@@ -1,11 +1,19 @@
 import React, { useState } from 'react'
 
-import Pagination from './Components/Pagination'
-
+import Form1 from './Components/Form1'
+import Form2 from './Components/Form2'
+import { DataProvider } from './MyHooks/ShareData'
 const App = () => {
-   
+
   return (
-    <Pagination/>
+    <>
+      <DataProvider>
+        <Form1 />
+        <Form2 />
+      </DataProvider>
+
+    </>
+    // <Pagination/>
     // <LoginFormValidation/>
   )
 }
