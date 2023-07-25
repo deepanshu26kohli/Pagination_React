@@ -14,13 +14,8 @@ const Form1 = () => {
         setPassword("")
         setData([...allEntry, newEntry])
     }
-   
-    useEffect(()=>{
-        console.log("Form1",allEntry)
-        // console.log("form1dataaftersendData",data)
-    },[allEntry])
     return (
-        <div className='container'>
+        <div className='container w-25'>
             <h1>Form1 Component</h1>
             <form action='submit' onSubmit={submitForm}>
                 <div className="mb-3">
